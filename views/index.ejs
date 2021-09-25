@@ -1,1 +1,21 @@
-<h1> PokeDex </h1>
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+<%- include("./partials/header.ejs") %>
+    <body>
+        <div>
+            <form action="/pokemens/new">
+                <input type="submit" value="NEW ITEM"/>
+            </form>
+        </div>
+        <div class="flex-container">
+                <% for(let i=0; i <data.length; i++){ %>
+                    <div class="card">
+                        <h4><%=data[i].name%></h4>
+                        <img class="pokemon-img" src="<%=data[i].img%>">
+                    </div>
+                <% } %>
+        </div>
+    </body>
+</html>
+

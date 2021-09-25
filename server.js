@@ -1,12 +1,12 @@
 const express = require('express');
 const app = express();
 const port= 3000;
-const pokemons = require('./models/pokemon.js');
+const pokemon = require('./models/pokemon.js');
 
 ////////.................
 // MIDDLEWARE
 /////////////////////////
-
+app.use(express.static("public"))
 
 /////////////////////////
 // ROUTES
@@ -15,12 +15,12 @@ const pokemons = require('./models/pokemon.js');
 
 // INDEX
 app.get('/pokemons', (req, res) => {
-res.render('index.ejs', { data: pokemons });
+res.render('index.ejs', { data: pokemon });
 });
 
 // SHOW
 app.get('/pokemons:id', (req, res) => {
-res.render('show.ejs', { data: pokemons[req.params.id] });
+res.render('show.ejs', { data: pokemon[req.params.id] });
 });
 
 
