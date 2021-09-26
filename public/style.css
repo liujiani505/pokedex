@@ -3,17 +3,18 @@
 
 *{
     margin: 0 auto;
-    text-align: center;
 }
 
 body{
     font-family: "Poppins";
+    background-color:rgb(240, 240, 240);
 }
 
 nav{
     color: white;
     background-color: rgb(245, 0, 73);
-    padding: 20px;
+    padding: 1em;
+    text-align: center;
 }
 
 .pokeball:hover{
@@ -36,27 +37,114 @@ nav{
 }
 
 .card{
-    margin-top: 30px;
-    width:200px;
-    height:180px; 
+    margin-top: 2em;
+    width: 12em;
+    height: 12em;
+    background-color: white;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 15px;
+    border-radius: 1em;
+    text-align: center;
 }
 
 .card:hover{
     background-color: rgb(245, 0, 73);
     color: white;
-    width:200px;
-    height:180px; 
+    width: 12em;
+    height: 12em;
 }
 
 .pokemon-img{
-    margin-top: 10px;
-    width: 30%;
-
+    margin-top: 1.5em;
+    width: 7em;
+    height: 7em;
 }
-  
 
-h4{
-    margin-top: 30px;
+.button{
+    display: inline-block;
+    padding-top:2em;
+}
+.add-button{
+    padding: 1em;
+    border-style: none;
+    color: white;
+    border:none;
+    background-color: rgb(26, 26, 26);
+    font-weight: 900;
+    cursor: pointer;
+    margin-left: 3em;
+    margin-right: 1em;
+}
+
+.add-button:hover{
+    transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+}
+
+.search-field{
+    width:30em;
+    border:.1em solid rgb(122, 122, 122);
+    padding: .9em;
+    display: inline-block;
+}
+
+.search-field:focus{
+    outline: 0;
+    border:.1em solid rgb(245, 0, 73);
+    padding: 1em;
+    display: inline-block;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.arrow{
+    margin-top: 2em;
+    margin-left: 2em;
+}
+
+.showpage-container{
+    width: 25em;
+    height: 25em;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#pokemon-img-showpage{
+    width: 15em;
+    height: 15em;
+    margin-top: 1em;
+}
+
+#stats h4{
+    margin-top: 2em;
+}
+
+.button-showpage{
+    display: inline-block;
+    margin: .3em;
+}
+
+.delete-button{
+    padding:.6em;
+    color:white;
+    background-color:rgb(245, 0, 73);
+    font-weight: 900;
+    cursor: pointer;
+    border-style: none;
+    margin-top: .5em;
+}
+
+.edit-button{
+    padding:.6em;
+    color: white;
+    background-color:black;
+    font-weight: 900;
+    cursor: pointer;
+    font-weight: 900;
+    cursor: pointer;
+    border-style: none;
 }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("./partials/head.ejs") %>
+    <%- include("./partials/header.ejs") %>
+<body>
+    <a href="/pokemons"><img class="arrow" src="/img/arrow.png" width="20px"></a>
+    <div class="showpage-container">
+        <div id="types">
+            <img id="pokemon-img-showpage" src="<%=pokeData.img%>" width="300px">
+            <h2><%= pokeData.name %></h2>
+            <h4><%= pokeData.type %></h4>
+            <form class="button-showpage" action="/pokemons/edit">
+                <input class="edit-button" type="submit" value="EDIT">
+            </form>
+            <form class="button-showpage" action="/pokemons/?_method=DELETE" method="POST">
+                <input class="delete-button" type="submit" value="DELETE">
+            </form>
+        </div>
+    </div>
+    <div class="showpage-container">
+        <div id="stats">
+            <h4>HP: <%= pokeData.stats.hp %></h4>
+            <h4>Attack: <%= pokeData.stats.attack %></h4>
+            <h4>Defense: <%= pokeData.stats.defense %></h4>
+            <h4>Spattack: <%= pokeData.stats.spattack %></h4>
+            <h4>Spdefense: <%= pokeData.stats.spdefense %></h4>
+            <h4>Speed: <%= pokeData.stats.speed %></h4>
+        </div>
+    </div>
+</body>
+</html>
+
+
