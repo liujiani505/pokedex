@@ -8,11 +8,11 @@
         <div id="types">
             <img id="pokemon-img-showpage" src="<%=pokeData.img%>" width="300px">
             <h2><%= pokeData.name %></h2>
-            <h4><%= pokeData.type %></h4>
+            <h4><%= pokeData.type%></h4>
             <form class="button-showpage" action="/pokemons/edit">
                 <input class="edit-button" type="submit" value="EDIT">
             </form>
-            <form class="button-showpage" action="/pokemons/?_method=DELETE" method="POST">
+            <form class="button-showpage" action="/pokemons/<%= index %>?_method=DELETE" method="POST">
                 <input class="delete-button" type="submit" value="DELETE">
             </form>
         </div>
