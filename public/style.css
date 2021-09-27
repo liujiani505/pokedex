@@ -35,7 +35,8 @@ nav{
     flex-wrap: wrap;
 }
 
-.card{
+
+.cards{
     margin-top: 2em;
     width: 12em;
     height: 12em;
@@ -62,6 +63,7 @@ nav{
     display: inline-block;
     padding-top:2em;
 }
+
 .add-button, .submit-button{
     padding: 1em;
     border-style: none;
@@ -133,7 +135,7 @@ a{
 #pokemon-img-showpage{
     width: 15em;
     height: 15em;
-    margin-top: 1.5em;
+    margin-top: 1em;
 }
 
 #stats h4{

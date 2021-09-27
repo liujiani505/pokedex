@@ -8,7 +8,7 @@
         <h2>Update Pokémon</h2>
         <form action="/pokemons/<%= index %>?_method=PUT" method="POST">
             <input class="editpage-field" type="text" name="name" value="<%= aPokemon.name %>"/>
-            <input class="editpage-field" type="text" name="img" value="<%= aPokemon.img %>" onfocus="value='https://i.imgur.com/XrR7qeo.png'"/>
+            <input class="editpage-field" type="text" name="img" value="<%= aPokemon.img %>" />
             <input class="editpage-field" type="text" name="type" value="<%= aPokemon.type %>"/>
             <input class="editpage-field" type="number" name="hp" value="<%= aPokemon.stats.hp %>"/>
             <input class="editpage-field" type="number" name="attack" value="<%= aPokemon.stats.attack %>"/>
